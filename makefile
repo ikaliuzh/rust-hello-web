@@ -1,5 +1,3 @@
-all: server client
-
 server: src/server.rs
 	rustc src/server.rs --out-dir target && ./target/server
 
