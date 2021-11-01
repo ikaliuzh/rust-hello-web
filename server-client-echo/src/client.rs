@@ -4,23 +4,9 @@ use std::io;
 use std::str::from_utf8;
 
 fn main() {
-<<<<<<< HEAD
-	match TcpStream::connect("localhost:3333") {
-		Ok(mut stream) => {
-			println!("Successfully connected to server in port 3333");
-            loop {
-				let mut msg_input = String::new();
-				io::stdin().read_line(&mut msg_input).expect("Failed to read line!");
-				msg_input = msg_input.trim().to_owned();
-				let msg = msg_input.as_bytes();
-				stream.write(msg).unwrap();
-				println!("Sent message \"{}\", awaiting reply...", msg_input.trim());
-=======
     match TcpStream::connect("localhost:3333") {
         Ok(mut stream) => {
             println!("Successfully connected to server in port 3333");
->>>>>>> f44d8c1df0695facd3160725d4671d80e04c40b0
-
             loop {
                 let mut msg_input = String::new();
                 io::stdin()
@@ -54,3 +40,4 @@ fn main() {
     }
     println!("Terminated!");
 }
+
