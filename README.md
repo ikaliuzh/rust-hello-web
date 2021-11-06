@@ -1,3 +1,3 @@
 # rust-hello-web
 
-A simple server-client echo application
+A simple server-client echo application; http server
